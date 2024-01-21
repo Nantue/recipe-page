@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/* ## Colors
+### Primary */
+
+--Nutmeg: hsl(14, 45%, 36%);
+--Dark--Raspberry: hsl(332, 51%, 32%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wenge-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%);
+
+/* Fonts */
+--fuente-principal: 'Outfit', sans-serif;
+--fuente-secundaria: Young Serif;
+}
+
+body{
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 100% 1fr;
+    background-color: var(--Eggshell);
+    font-family: 'Outfit' , sans-serif;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    max-width: 736px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 40px;
+}
+.contenedor img{
+    max-width: 656.1px;
+    width: 100%;
+    border-radius: 13px;
+}
+
+
+/* CONTENEDOR-INFO */
+.contenedor-info h1{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--fuente-secundaria);
+    margin-top: 42px;
+    color: var(--Dark-Charcoal);
+}
+.contenedor-info .plato{
+    font-family: var(--fuente-principal);
+    line-height: 1.5;
+    color: var(--Dark-Charcoal);
+    margin-top: 28px;
+}
+
+/* CONTAINER-LIST */
+.container-list{
+    padding: 30px;
+    margin-top: 35px;
+    background-color: var(--Rose-White);
+    border-radius: 15px;
+}
+.container-list h3{
+    font-size: 20px;
+    font-family: var(--fuente-principal);
+    color: var(--Dark--Raspberry);
+}
+.list-card{
+    margin-left: 6px;
+    margin-top: 22px;
+}
+.container-list .list-text{
+    margin-left: 18px;
+    color: var(--Dark--Raspberry);
+}
+.container-list .list-text b{
+    font-weight: var(--fuente-principal);
+    font-weight: 600;
+    color: var(--Wenge-Brown);
+}
+.container-list .list-text p{
+    margin-left: 18px;
+    margin-top: 18px;
+    font-weight: 400;
+    font-family: var(--fuente-principal);
+    color: var(--Wenge-Brown);
+}
+
+
+/* INGREDIENTS */
+.ingredients{
+    margin-top: 35px;
+}
+.ingredients .ingredients-list{
+    margin: 17px 23px;
+    color: var(--Nutmeg);
+}
+.ingredients .ingredients-text{
+    font-family: var(--fuente-principal);
+    color: var(--Wenge-Brown);
+    margin-left: 18px;
+}
+h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--Nutmeg);
+    font-family: var(--fuente-secundaria);
+}
+
+
+/* divider - ingredients */
+.divider-ingredients{
+    position: relative;
+}
+.divider-ingredients::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-top: 17px;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(30deg 10% 34% / 40%);
+}
+
+
+/* INSTRUCTIONS */
+.instructions{
+    margin-top: 60px;
+}
+li.instructions-list {
+    margin: 17px 23px;
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+p.instructions-text {
+    margin-left: 18px;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--Wenge-Brown);
+    font-family: var(--fuente-principal);
+
+}
+.instructions  b{
+    font-weight: var(--fuente-principal);
+    font-weight: 600;
+    color: var(--Wenge-Brown);
+}
+
+/* divider - instructions */
+.divider-intructions{
+    position: relative;
+}
+.divider-instructions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-top: 17px;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(30deg 10% 34% / 40%);
+}
+
+/* NUTRITION */
+.nutrition{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.nutrition .nutrition-text{
+    margin-top: 15px;
+    font-family: var(--fuente-principal);
+    color: var(--Wenge-Brown);
+}
+
+.nutritional-info{
+    margin-top: 12.8px;
+    padding-bottom: 13px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    color: var(--Wenge-Brown);
+    font-family: var(--fuente-principal);
+}
+
+.nutritional-info .colum-1{
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.nutritional-info .colum-2{
+    width: 50%;
+    margin-top: 32px;
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* Attribution */
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
