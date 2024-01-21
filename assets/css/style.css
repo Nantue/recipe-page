@@ -43,6 +43,7 @@ body{
     width: 100%;
     border-radius: 25px;
     padding: 40px;
+    margin: 123px auto;
 }
 .contenedor img{
     max-width: 656.1px;
